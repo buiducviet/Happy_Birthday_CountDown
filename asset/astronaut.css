@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+
+
+
+.wrap {
+	align-items: center;
+	display: flex;
+	height: 100%;
+   	flex:1;
+    margin: auto;
+    display: flex;
+   
+	justify-content: center;
+    background: none;
+}
+
+.container__inner {
+    margin: auto;
+	position: relative;
+    height: 100%; 
+	background: url("https://timedotcom.files.wordpress.com/2017/10/229-westerlund-21.jpg?w=1520&quality=85&h=1139")
+		0 0 no-repeat;
+    display: flex;
+  
+}
+.astronaut {
+	animation: spin 20000ms linear infinite;
+	height: 150px;
+	margin: auto;
+	width: auto;
+}
+.earth {
+    height: 100px;
+    margin: auto;
+    width: auto;
+    animation: spin1 200000ms linear infinite;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin1 {
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
